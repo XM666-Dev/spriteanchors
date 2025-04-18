@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cl74ggkyuxorn"]
+
+[ext_resource type="Texture2D" uid="uid://bjvasa26gqc5n" path="res://mon.png" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://dwb3vsjbqjk0c" path="res://Sprite2d.cs" id="2_0e48y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_wtcfe")
+script = ExtResource("2_0e48y")
+metadata/left_hand = PackedVector2Array(7.5, 2.5)
+metadata/right_hand = PackedVector2Array(-7.5, 1.5)
+metadata/left_leg = PackedVector2Array(3.5, 5.5)
+metadata/right_leg = PackedVector2Array(-2.5, 5.5)
+metadata/left_eye = PackedVector2Array(-0.5, -3)
+metadata/right_eye = PackedVector2Array(3.5, -3)
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+
+[node name="Stick" type="ColorRect" parent="."]
+offset_left = 100.0
+offset_right = 102.0
+offset_bottom = 40.0
+rotation = 0.785398
